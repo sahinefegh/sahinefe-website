@@ -1,0 +1,219 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e9ecef;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    color: #333;
+}
+
+.resume-wrapper {
+    display: flex;
+    width: 100%;
+    max-width: 900px;
+    background-color: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.left-column {
+    width: 38%;
+    background-color: #223446;
+    color: #ffffff;
+    padding: 50px 30px;
+}
+
+.left-column h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.left-column h2 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #aebfd1;
+    margin-bottom: 30px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #3c546c;
+    object-fit: cover;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.contact-info {
+    margin-bottom: 40px;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-info i {
+    width: 20px;
+    margin-right: 10px;
+    color: #aebfd1;
+}
+.section-title-left {
+    background-color: #3c546c;
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.profile-text,
+.awards-text {
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    color: #d1d9e0;
+}
+
+.language-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.dots {
+    display: flex;
+    gap: 4px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #a3b8cf;
+}
+
+.dot.filled {
+    background-color: #ffffff;
+}
+
+.awards-item {
+    margin-bottom: 15px;
+}
+
+.awards-item strong {
+    display: block;
+    color: #ffffff;
+    margin-bottom: 3px;
+}
+
+.right-column {
+    width: 62%;
+    padding: 50px 40px;
+    background-color: #ffffff;
+}
+
+.section-title-right {
+    background-color: #f0f0f0;
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    text-align: center;
+    color: #333;
+    border-radius: 2px;
+}
+
+.section-title-right i {
+    margin-right: 8px;
+}
+
+.experience-item,
+.education-item {
+    margin-bottom: 25px;
+}
+
+.experience-item h3,
+.education-item h3 {
+    font-size: 16px;
+    color: #223446;
+    margin-bottom: 3px;
+}
+    
+.experience-item h4, 
+.education-item h4 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.date-location {
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.experience-item ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #444;
+}
+
+.experience-item ul li {
+    margin-bottom: 5px;
+}
+
+/* Yetenekler Listesi */
+.skills-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 13px;
+    line-height: 1.8;
+    color: #444;
+}
+
+.skills-list li {
+    margin-bottom: 8px;
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 768px) {
+    .resume-wrapper {
+        flex-direction: column;
+    }
+
+    .left-column,
+    .right-column {
+        width: 100%;
+    }
+}
